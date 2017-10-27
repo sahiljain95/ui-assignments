@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Hotel Booking Example</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+
+</head>
+
+<body>
+
+  <header>
+    <h3 id="content-heading">Hotel Booking</h3>
+  </header>
+
+  <div class="hotel-header">
+    <div class="hotel-name">
+      Hotel Sprinklr
+    </div>
+      <div class="button-group">
+        <button type="button" id="sortByPrice"> Price </button>
+        <button type="button" id="sortByType"> Type </button>
+      </div>
+  </div>
+
+  <hr/>
+  <div id = "table-wrapper">
+    <div id="rooms"></div>
+  </div>
+
+  <hr />
+  <div class="calculation">
+    <button type = 'button' id = 'checkout'> Checkout </button>
+    <h4> Number of rooms booked: <span class='calculation__rooms'> </span> </h4>
+    <h4> Price: <span class='calculation__price'> </span></h4>
+    <h4> Discount Applicable: <span class='calculation__discount'> </span></h4>
+    <h4> Net Amount: <span class='calculation__net'> </span></h4>
+  </div>
+
+ <div class="footer-wrapper">
+  <footer>
+    <a href="https://github.com/sahiljain112/front-end-assignments" target="_blank">@sahiljain112</a>
+  </footer>
+</div>
+
+  <script src="bookingOptions.js" type="text/babel"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</body>
+</html>
